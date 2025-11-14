@@ -30,23 +30,23 @@ A modern, responsive Angular application for discovering, booking, and managing 
 
 
 
-\- 🔍 \*\*Browse Courses\*\*: Explore a comprehensive catalog of courses with detailed information
+\- 🔍 **Browse Courses**: Explore a comprehensive catalog of courses with detailed information
 
 
 
-\- 🎓 \*\*Course Details\*\*: View in-depth course information, pricing, and enrollment status
+\- 🎓 **Course Details**: View in-depth course information, pricing, and enrollment status
 
 
 
-\- ❤️ \*\*Wishlist\*\*: Save favorite courses for later enrollmentng serve
+\- ❤️ **Wishlist**: Save favorite courses for later enrollmentng serve
 
 
 
-\- 📝 \*\*Easy Enrollment\*\*: Simple form-based course enrollment process```
+\- 📝 **Easy Enrollment**: Simple form-based course enrollment process```
 
 
 
-\- 📱 \*\*Responsive Design\*\*: Optimized for desktop, tablet, and mobile devices
+\- 📱 **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 
 
 
@@ -58,19 +58,19 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 
 
-\- ➕ \*\*Add Courses\*\*: Create and publish new courses with pricing and availability settings## Code scaffolding
+\- ➕ **Add Courses**: Create and publish new courses with pricing and availability settings## Code scaffolding
 
 
 
-\- 👥 \*\*Student Management\*\*: View all enrolled students and their course enrollments
+\- 👥 **Student Management**: View all enrolled students and their course enrollments
 
 
 
-\- 📊 \*\*Dashboard\*\*: Quick stats overview (total courses, students, enrollments, revenue)Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+\- 📊 **Dashboard**: Quick stats overview (total courses, students, enrollments, revenue)Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
 
 
-\- ⚡ \*\*Easy Navigation\*\*: Intuitive admin interface with organized menu
+\- ⚡ **Easy Navigation**: Intuitive admin interface with organized menu
 
 
 
@@ -82,19 +82,19 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 
 
-\- 🎨 \*\*Modern UI/UX\*\*: Professional gradient design with smooth animations```
+\- 🎨 **Modern UI/UX**: Professional gradient design with smooth animations```
 
 
 
-\- 🌐 \*\*About Page\*\*: Comprehensive information about the platform
+\- 🌐 **About Page**: Comprehensive information about the platform
 
 
 
-\- 🦶 \*\*Footer\*\*: Complete footer with links and social mediaFor a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+\- 🦶 **Footer**: Complete footer with links and social mediaFor a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
 
 
-\- ♿ \*\*Accessibility\*\*: Semantic HTML and ARIA labels for better accessibility
+\- ♿ **Accessibility**: Semantic HTML and ARIA labels for better accessibility
 
 
 
@@ -110,27 +110,27 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 
 
-\- \*\*Framework\*\*: \[Angular 19](https://angular.io/)
+\- **Framework**: \[Angular 19](https://angular.io/)
 
 
 
-\- \*\*Language\*\*: TypeScript## Building
+\- **Language**: TypeScript## Building
 
 
 
-\- \*\*Styling\*\*: CSS 3 with responsive design
+\- **Styling**: CSS 3 with responsive design
 
 
 
-\- \*\*Routing\*\*: Angular Router with lazy-loaded admin moduleTo build the project run:
+\- **Routing**: Angular Router with lazy-loaded admin moduleTo build the project run:
 
 
 
-\- \*\*Forms\*\*: Reactive Forms with validation
+\- **Forms**: Reactive Forms with validation
 
 
 
-\- \*\*Backend\*\*: Node.js with JSON Server (db.json)```bash
+\- **Backend**: Node.js with JSON Server (db.json)```bash
 
 
 
@@ -262,7 +262,7 @@ backend/## Additional Resources
 
 
 
-1\. \*\*Clone the repository\*\* (if applicable)
+1\. **Clone the repository** (if applicable)
 
 ```bash
 
@@ -272,7 +272,7 @@ cd course-booking-system
 
 
 
-2\. \*\*Install frontend dependencies\*\*
+2\. **Install frontend dependencies**
 
 ```bash
 
@@ -282,7 +282,7 @@ npm install
 
 
 
-3\. \*\*Install backend dependencies\*\*
+3\. **Install backend dependencies**
 
 ```bash
 
@@ -358,27 +358,27 @@ node server.js
 
 ### Public Components
 
-\- \*\*app.component\*\*: Main layout with navbar and footer
+\- **app.component**: Main layout with navbar and footer
 
-\- \*\*courses-list\*\*: Displays all available courses with wishlist
+\- **courses-list**: Displays all available courses with wishlist
 
-\- \*\*course-card\*\*: Reusable card showing course summary
+\- **course-card**: Reusable card showing course summary
 
-\- \*\*course-detail\*\*: Full course details with enrollment CTA
+\- **course-detail**: Full course details with enrollment CTA
 
-\- \*\*sign-up-form\*\*: Form for student enrollment with validation
+\- **sign-up-form**: Form for student enrollment with validation
 
-\- \*\*about-courses\*\*: Platform information and mission
+\- **about-courses**: Platform information and mission
 
 
 
 ### Admin Components
 
-\- \*\*dashboard\*\*: Overview with stats cards and navigation
+\- **dashboard**: Overview with stats cards and navigation
 
-\- \*\*add-course\*\*: Form to create new courses with validation
+\- **add-course**: Form to create new courses with validation
 
-\- \*\*student-list\*\*: Table showing all enrolled students
+\- **student-list**: Table showing all enrolled students
 
 
 
@@ -388,33 +388,33 @@ node server.js
 
 ### Color Palette
 
-\- \*\*Primary Gradient\*\*: #667eea → #764ba2 (Purple/Indigo)
+\- **Primary Gradient**: #667eea → #764ba2 (Purple/Indigo)
 
-\- \*\*Text\*\*: #333 (Dark gray for readability)
+\- **Text**: #333 (Dark gray for readability)
 
-\- \*\*Accents\*\*: #ff6b6b (Red), #51cf66 (Green), #ffd43b (Yellow)
+\- **Accents**: #ff6b6b (Red), #51cf66 (Green), #ffd43b (Yellow)
 
-\- \*\*Background\*\*: #fafafa (Light gray)
+\- **Background**: #fafafa (Light gray)
 
 
 
 ### Typography
 
-\- \*\*Headings\*\*: Bold, 1.3rem–3.5rem depending on level
+\- **Headings**: Bold, 1.3rem–3.5rem depending on level
 
-\- \*\*Body Text\*\*: 0.9rem–1.05rem with 1.6–1.8 line-height
+\- **Body Text**: 0.9rem–1.05rem with 1.6–1.8 line-height
 
-\- \*\*Code\*\*: Monospace, 0.9rem
+\- **Code**: Monospace, 0.9rem
 
 
 
 ### Responsive Breakpoints
 
-\- \*\*Desktop\*\*: 1024px and above
+\- **Desktop**: 1024px and above
 
-\- \*\*Tablet\*\*: 768px–1023px
+\- **Tablet**: 768px–1023px
 
-\- \*\*Mobile\*\*: Below 768px
+\- **Mobile**: Below 768px
 
 
 
@@ -468,31 +468,31 @@ cd backend \&\& node server.js
 
 ### Sign-Up Form
 
-\- \*\*Name\*\*: Required
+\- **Name**: Required
 
-\- \*\*Email\*\*: Required, valid email format
+\- **Email**: Required, valid email format
 
-\- \*\*Phone\*\*: Required
+\- **Phone**: Required
 
-\- \*\*Course\*\*: Required selection
+\- **Course**: Required selection
 
 
 
 ### Add Course Form
 
-\- \*\*Title\*\*: Required, minimum length
+\- **Title**: Required, minimum length
 
-\- \*\*Description\*\*: Required, minimum length
+\- **Description**: Required, minimum length
 
-\- \*\*Price\*\*: Required, minimum value (0)
+\- **Price**: Required, minimum value (0)
 
-\- \*\*Date\*\*: Required date
+\- **Date**: Required date
 
-\- \*\*Image URL\*\*: Optional or required (URL format)
+\- **Image URL**: Optional or required (URL format)
 
-\- \*\*On Sale\*\*: Optional checkbox
+\- **On Sale**: Optional checkbox
 
-\- \*\*Sold Out\*\*: Optional checkbox
+\- **Sold Out**: Optional checkbox
 
 
 
@@ -516,15 +516,15 @@ cd backend \&\& node server.js
 
 
 
-\- \*\*Mobile-First Approach\*\*: Base styles for mobile, enhanced for larger screens
+\- **Mobile-First Approach**: Base styles for mobile, enhanced for larger screens
 
-\- \*\*Flexible Grid Layouts\*\*: CSS Grid with auto-fit for responsive columns
+\- **Flexible Grid Layouts**: CSS Grid with auto-fit for responsive columns
 
-\- \*\*Touch-Friendly Buttons\*\*: Minimum 44px × 44px for mobile accessibility
+\- **Touch-Friendly Buttons**: Minimum 44px × 44px for mobile accessibility
 
-\- \*\*Hidden Columns\*\*: Admin tables hide email/course columns on mobile
+\- **Hidden Columns**: Admin tables hide email/course columns on mobile
 
-\- \*\*Optimized Typography\*\*: Font sizes adjust for readability on all devices
+\- **Optimized Typography**: Font sizes adjust for readability on all devices
 
 
 
@@ -532,13 +532,13 @@ cd backend \&\& node server.js
 
 
 
-\- \*\*Lazy Loading\*\*: Admin module loads on demand
+\- **Lazy Loading**: Admin module loads on demand
 
-\- \*\*OnPush Change Detection\*\*: Optimized component updates
+\- **OnPush Change Detection**: Optimized component updates
 
-\- \*\*CSS Minification\*\*: Production builds include minified styles
+\- **CSS Minification**: Production builds include minified styles
 
-\- \*\*Image Optimization\*\*: Cover images use object-fit for consistency
+\- **Image Optimization**: Cover images use object-fit for consistency
 
 
 
@@ -550,11 +550,11 @@ cd backend \&\& node server.js
 
 
 
-\*\*Created by\*\*: Aboubacar  
+**Created by**: Aboubacar  
 
-\*\*Angular Version\*\*: 19.0.6  
+**Angular Version**: 19.0.6  
 
-\*\*Created\*\*: November 2025
+**Created**: November 2025
 
 
 
@@ -584,7 +584,7 @@ cd backend \&\& node server.js
 
 
 
-Here are some screenshots showing the main pages of \*\*CourseHub\*\*:
+Here are some screenshots showing the main pages of **CourseHub**:
 
 
 
@@ -606,7 +606,7 @@ Here are some screenshots showing the main pages of \*\*CourseHub\*\*:
 
 
 
-\*\*Overview – Mission – Vision\*\*
+**Overview – Mission – Vision**
 
 
 
@@ -652,7 +652,7 @@ Here are some screenshots showing the main pages of \*\*CourseHub\*\*:
 
 
 
-\*\*Happy coding! 🎉\*\*
+**Happy coding! 🎉**
 
 
 
