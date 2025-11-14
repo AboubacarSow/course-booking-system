@@ -1,6 +1,6 @@
-\# 📚 CourseHub - Course Booking System
+# 📚 CourseHub - Course Booking System
 
-\# CourseBookingSystem
+# CourseBookingSystem
 
 
 
@@ -16,17 +16,17 @@ A modern, responsive Angular application for discovering, booking, and managing 
 
 
 
-\## 🎯 Features
+## 🎯 Features
 
-\## Development server
-
-
+## Development server
 
 
 
 
 
-\### For Students To start a local development server, run:
+
+
+### For Students To start a local development server, run:
 
 
 
@@ -54,7 +54,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 
 
-\### For Administrators
+### For Administrators
 
 
 
@@ -78,7 +78,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 
 
-\### Generalng generate component component-name
+### Generalng generate component component-name
 
 
 
@@ -102,7 +102,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 
 
-\## 🛠️ Tech Stackng generate --help
+## 🛠️ Tech Stackng generate --help
 
 
 
@@ -138,7 +138,7 @@ ng build
 
 
 
-\## 📁 Project Structure```
+## 📁 Project Structure```
 
 
 
@@ -244,11 +244,11 @@ backend/## Additional Resources
 
 
 
-\## 🚀 Getting Started
+## 🚀 Getting Started
 
 
 
-\### Prerequisites
+### Prerequisites
 
 \- Node.js (v18 or higher)
 
@@ -258,7 +258,7 @@ backend/## Additional Resources
 
 
 
-\### Installation
+### Installation
 
 
 
@@ -296,7 +296,7 @@ cd ..
 
 
 
-\### Running the Application
+### Running the Application
 
 
 
@@ -326,7 +326,7 @@ node server.js
 
 
 
-\## 📖 Key Pages \& Routes
+## 📖 Key Pages \& Routes
 
 
 
@@ -352,11 +352,11 @@ node server.js
 
 
 
-\## 🏗️ Component Overview
+## 🏗️ Component Overview
 
 
 
-\### Public Components
+### Public Components
 
 \- \*\*app.component\*\*: Main layout with navbar and footer
 
@@ -372,7 +372,7 @@ node server.js
 
 
 
-\### Admin Components
+### Admin Components
 
 \- \*\*dashboard\*\*: Overview with stats cards and navigation
 
@@ -382,11 +382,11 @@ node server.js
 
 
 
-\## 🎨 Design System
+## 🎨 Design System
 
 
 
-\### Color Palette
+### Color Palette
 
 \- \*\*Primary Gradient\*\*: #667eea → #764ba2 (Purple/Indigo)
 
@@ -398,7 +398,7 @@ node server.js
 
 
 
-\### Typography
+### Typography
 
 \- \*\*Headings\*\*: Bold, 1.3rem–3.5rem depending on level
 
@@ -408,7 +408,7 @@ node server.js
 
 
 
-\### Responsive Breakpoints
+### Responsive Breakpoints
 
 \- \*\*Desktop\*\*: 1024px and above
 
@@ -418,43 +418,43 @@ node server.js
 
 
 
-\## 🔧 Development Commands
+## 🔧 Development Commands
 
 
 
 ```bash
 
-\# Start development server
+# Start development server
 
 npm start
 
 
 
-\# Build for production
+# Build for production
 
 npm run build
 
 
 
-\# Run unit tests
+# Run unit tests
 
 npm test
 
 
 
-\# Run linting
+# Run linting
 
 npm run lint
 
 
 
-\# Generate new component
+# Generate new component
 
 ng generate component path/component-name
 
 
 
-\# Backend development
+# Backend development
 
 cd backend \&\& node server.js
 
@@ -462,11 +462,11 @@ cd backend \&\& node server.js
 
 
 
-\## 📝 Form Validation
+## 📝 Form Validation
 
 
 
-\### Sign-Up Form
+### Sign-Up Form
 
 \- \*\*Name\*\*: Required
 
@@ -478,7 +478,7 @@ cd backend \&\& node server.js
 
 
 
-\### Add Course Form
+### Add Course Form
 
 \- \*\*Title\*\*: Required, minimum length
 
@@ -496,7 +496,7 @@ cd backend \&\& node server.js
 
 
 
-\## 🔐 API Endpoints (Backend)
+## 🔐 API Endpoints (Backend)
 
 
 
@@ -512,7 +512,7 @@ cd backend \&\& node server.js
 
 
 
-\## 📱 Responsive Design Features
+## 📱 Responsive Design Features
 
 
 
@@ -528,7 +528,7 @@ cd backend \&\& node server.js
 
 
 
-\## 🚀 Performance Optimization
+## 🚀 Performance Optimization
 
 
 
@@ -546,7 +546,7 @@ cd backend \&\& node server.js
 
 
 
-\## 👨‍💻 Authors
+## 👨‍💻 Authors
 
 
 
@@ -562,7 +562,7 @@ cd backend \&\& node server.js
 
 
 
-\## 🎓 Learning Resources
+## 🎓 Learning Resources
 
 
 
@@ -580,7 +580,7 @@ cd backend \&\& node server.js
 
 
 
-\## 🖼️ Quick View
+## 🖼️ Quick View
 
 
 
@@ -592,7 +592,7 @@ Here are some screenshots showing the main pages of \*\*CourseHub\*\*:
 
 
 
-\### 🎓 Courses
+### 🎓 Courses
 
 <img src="public/screenshoots/course.png" width="700" alt="Courses Page"/>
 
@@ -602,7 +602,7 @@ Here are some screenshots showing the main pages of \*\*CourseHub\*\*:
 
 
 
-\### ℹ️ About Page
+### ℹ️ About Page
 
 
 
@@ -624,7 +624,7 @@ Here are some screenshots showing the main pages of \*\*CourseHub\*\*:
 
 
 
-\### 🧾 Enrollment Form
+### 🧾 Enrollment Form
 
 <img src="public/screenshoots/enroll-course.png" width="700" alt="Enrollment Form"/>
 
@@ -634,17 +634,17 @@ Here are some screenshots showing the main pages of \*\*CourseHub\*\*:
 
 
 
-\### 🛠️ Admin Dashboard
+### 🛠️ Admin Dashboard
 
 
 
-\#### Overview
+#### Overview
 
 <img src="public/screenshoots/dashboard.png" width="700"/>
 
 
 
-\#### Course \& Student Management
+#### Course \& Student Management
 
 <img src="public/screenshoots/dashboard-1.png" width="700"/>
 
