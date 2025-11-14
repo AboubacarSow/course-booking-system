@@ -610,13 +610,13 @@ Here are some screenshots showing the main pages of **CourseHub**:
 
 
 
-<img src="public/screenshoots/about-0.png" width="230"/>
+<img src="public/screenshoots/about-0.png" width="700"/>
 
-<img src="public/screenshoots/about-1.png" width="230"/>
+<img src="public/screenshoots/about-1.png" width="700"/>
 
-<img src="public/screenshoots/about-2.png" width="230"/>
+<img src="public/screenshoots/about-2.png" width="700"/>
 
-<img src="public/screenshoots/about-3.png" width="230"/>
+<img src="public/screenshoots/about-3.png" width="700"/>
 
 
 
