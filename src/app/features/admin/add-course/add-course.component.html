@@ -1,0 +1,69 @@
+<div class="add-course-container">
+  <div class="card">
+    <header class="card-header">
+      <h2>Add a New Course</h2>
+      <p class="card-subtitle">Fill in the details below to publish a course.</p>
+    </header>
+
+    <form [formGroup]="createCourseform" (ngSubmit)="onSubmit()" class="course-form" novalidate>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="title" class="form-label">Title</label>
+          <input id="title" formControlName="title" type="text" class="form-input" placeholder="e.g. Introduction to Angular">
+          <div class="error" *ngIf="createCourseform.get('title')?.invalid && (createCourseform.get('title')?.dirty || createCourseform.get('title')?.touched)">
+            <small *ngIf="createCourseform.get('title')?.errors?.['required']">Title is required</small>
+            <small *ngIf="createCourseform.get('title')?.errors?.['minlength']">Title is too short</small>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="description" class="form-label">Description</label>
+          <textarea id="description" formControlName="description" class="form-textarea" rows="4" placeholder="Short description of the course"></textarea>
+          <div class="error" *ngIf="createCourseform.get('description')?.invalid && (createCourseform.get('description')?.dirty || createCourseform.get('description')?.touched)">
+            <small *ngIf="createCourseform.get('description')?.errors?.['required']">Description is required</small>
+            <small *ngIf="createCourseform.get('description')?.errors?.['minlength']">Description is too short</small>
+          </div>
+          <small class="hint">Keep it concise — 2–4 sentences.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="price" class="form-label">Price (USD)</label>
+          <input id="price" formControlName="price" type="number" class="form-input" min="0" step="0.01" placeholder="49.99">
+          <div class="error" *ngIf="createCourseform.get('price')?.invalid && (createCourseform.get('price')?.dirty || createCourseform.get('price')?.touched)">
+            <small *ngIf="createCourseform.get('price')?.errors?.['required']">Price is required</small>
+            <small *ngIf="createCourseform.get('price')?.errors?.['min']">Price must be at least 0</small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="date" class="form-label">Start Date</label>
+          <input id="date" formControlName="date" type="date" class="form-input">
+          <div class="error" *ngIf="createCourseform.get('date')?.invalid && (createCourseform.get('date')?.dirty || createCourseform.get('date')?.touched)">
+            <small *ngIf="createCourseform.get('date')?.errors?.['required']">Date is required</small>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="imageUrl" class="form-label">Cover Image URL</label>
+          <input id="imageUrl" formControlName="imageUrl" type="url" class="form-input" placeholder="https://example.com/image.jpg">
+          <div class="error" *ngIf="createCourseform.get('imageUrl')?.invalid && (createCourseform.get('imageUrl')?.dirty || createCourseform.get('imageUrl')?.touched)">
+            <small *ngIf="createCourseform.get('imageUrl')?.errors?.['required']">Image URL is required</small>
+            <small *ngIf="createCourseform.get('imageUrl')?.errors?.['pattern']">Image URL format is invalid</small>
+          </div>
+          <small class="hint">Provide a publicly accessible image URL (optional).</small>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" formControlName="onSale"> <span>On Sale</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary" [disabled]="createCourseform.invalid">Create Course</button>
+        <button type="button" class="btn btn-secondary" (click)="createCourseform.reset()">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>

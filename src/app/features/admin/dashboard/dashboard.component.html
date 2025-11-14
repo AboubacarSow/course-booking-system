@@ -1,0 +1,63 @@
+<div class="dashboard-container">
+  <!-- Header Section -->
+  <header class="dashboard-header">
+    <div class="header-content">
+      <h1>Admin Dashboard</h1>
+      <p class="header-subtitle">Manage courses and student enrollments</p>
+    </div>
+    <div class="header-welcome">
+      <span class="welcome-badge">👋 Welcome Admin</span>
+    </div>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stat-card">
+      <div class="stat-icon">📚</div>
+      <div class="stat-content">
+        <h3 class="stat-title">Total Courses</h3>
+        <p class="stat-number">24</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">👥</div>
+      <div class="stat-content">
+        <h3 class="stat-title">Total Students</h3>
+        <p class="stat-number">156</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">✅</div>
+      <div class="stat-content">
+        <h3 class="stat-title">Active Enrollments</h3>
+        <p class="stat-number">312</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">💰</div>
+      <div class="stat-content">
+        <h3 class="stat-title">Revenue</h3>
+        <p class="stat-number">$12.5K</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Tabs -->
+  <nav class="admin-nav">
+    <div class="nav-container">
+      <a routerLink="new-course" routerLinkActive="active" class="nav-link">
+        <span class="nav-icon">➕</span>
+        <span class="nav-text">Add Course</span>
+      </a>
+      <a routerLink="students" routerLinkActive="active" class="nav-link">
+        <span class="nav-icon">👥</span>
+        <span class="nav-text">View Students</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Content Area -->
+  <section class="content-section">
+    <router-outlet></router-outlet>
+  </section>
+</div>

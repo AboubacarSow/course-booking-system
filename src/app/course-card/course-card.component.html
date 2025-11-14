@@ -1,0 +1,44 @@
+  <div class="course-card" [class.sold-out]="course.soldOut">
+    <!-- Badge Section -->
+    <div class="card-badges">
+      <span *ngIf="course.soldOut" class="badge badge-sold-out">Sold Out</span>
+      <span *ngIf="course.price < 50 && !course.soldOut" class="badge badge-special-offer">Special Offer</span>
+      <span *ngIf="course.onsale" class="badge badge-on-sale">On Sale</span>
+    </div>
+
+    <!-- Image Section -->
+    <div class="card-image">
+      <img [src]="course.imageUrl" alt="{{ course.title }}" class="course-img">
+    </div>
+
+    <!-- Content Section -->
+    <div class="card-content">
+      <h3 class="course-title">{{ course.title }}</h3>
+      
+      <p class="course-description">{{ course.description }}</p>
+      
+      <div class="course-meta">
+        <div class="meta-item">
+          <span class="meta-label">📅 Date:</span>
+          <span class="meta-value">{{ course.date | date:'short' }}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">💰 Price:</span>
+          <span class="meta-value price">{{ course.price | currency:'USD'}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions Section -->
+    <div class="card-actions">
+      <button class="btn btn-secondary" (click)="showDetails(course.id)" title="View course details">
+        📖 Details
+      </button>
+      <button class="btn btn-wishlist" (click)="addToWishlist()" title="Add to wishlist">
+        ❤️ Wishlist
+      </button>
+      <button class="btn btn-primary" (click)="onBookCourse()" [disabled]="course.soldOut">
+        ✓ Book
+      </button>
+    </div>
+  </div>

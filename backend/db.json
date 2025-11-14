@@ -1,0 +1,53 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Intro to Angular",
+      "description": "Learn Angular basics",
+      "price": 49,
+      "date": "2025-03-01",
+      "imageUrl": "angular-logo.jpg",
+      "soldOut": false
+    },
+    {
+      "id": 2,
+      "title": "Advanced Angular",
+      "description": "Deep dive into Angular",
+      "price": 99,
+      "date": "2025-04-10",
+      "imageUrl": "angular-logo.jpg",
+      "soldOut": true
+    },
+    {
+      "id": 3,
+      "title": "RxJS Fundamentals",
+      "description": "Asynchronous data streams",
+      "price": 45,
+      "onSale": true,
+      "date": "2025-05-05",
+      "imageUrl": "angular-logo.jpg",
+      "soldOut": false
+    },
+    {
+      "id": 1763083846234,
+      "title": "Introduction to React",
+      "description": "Get the fundamental of the most front-end framework used by developers around the world",
+      "price": 100,
+      "imageUrl": "react-logo.png",
+      "date": "2025-11-19",
+      "onSale": true
+    }
+  ],
+  "students": [
+    {},
+    {
+      "id": 1763080597861,
+      "name": "Mamadou Issa Barry",
+      "email": "aysegul123@gmail.com",
+      "phoneNumber": "5344095872",
+      "enrolledCourseIds": [
+        "2"
+      ]
+    }
+  ]
+}

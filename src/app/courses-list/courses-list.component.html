@@ -1,0 +1,42 @@
+<div class="courses-container">
+  <div class="page-header">
+    <h1>Explore our collection of professional courses</h1>
+  </div>
+
+  <!-- Wishlist Section -->
+  <div *ngIf="wishlist.length > 0" class="wishlist-section">
+    <div class="wishlist-header">
+      <h2>❤️ My Wishlist</h2>
+      <span class="wishlist-count">{{ wishlist.length }} course(s)</span>
+    </div>
+    <div class="wishlist-grid">
+      <div *ngFor="let item of wishlist; let i = index" class="wishlist-item">
+        <span class="wish-item-title">{{ item.title }}</span>
+        <span class="wish-item-separator" *ngIf="i < wishlist.length - 1">,</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Courses Grid Section -->
+  <div class="courses-section">
+    <div class="section-header">
+      <h2>{{title}}</h2>
+      <p class="courses-count">{{ courses.length }} course(s) available</p>
+    </div>
+    
+    <div *ngIf="courses.length > 0; else noCourses" class="courses-grid">
+      <app-course-card 
+        *ngFor="let item of courses" 
+        [course]="item" 
+        (bookCourse)="onBookCourse($event)" 
+        (onAddToWishList)="onAddToWishList($event)">
+      </app-course-card>
+    </div>
+
+    <ng-template #noCourses>
+      <div class="no-courses">
+        <p>No courses available at the moment.</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+<div class="student-list-container">
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Student Management</h1>
+    <p class="subtitle">Manage and view all enrolled students</p>
+  </div>
+
+  <!-- Loading State -->
+  @if (loading) {
+  <div class="loading-state">
+    <div class="spinner"></div>
+    <p>Loading students...</p>
+  </div>
+  }
+
+  <!-- Error State -->
+  @if (errorMsg) {
+  <div class="error-state">
+    <div class="error-icon">⚠️</div>
+    <p class="error-title">Something went wrong</p>
+    <p class="error-message">{{ errorMsg }}</p>
+  </div>
+  }
+
+  <!-- Students List -->
+  @if (!loading && !errorMsg) {
+    @if ((students?.length ?? 0) > 0) {
+    <div class="students-section">
+      <!-- Stats Card -->
+      <div class="stats-card">
+        <span class="stat-label">Total Students:</span>
+        <span class="stat-value">{{ students?.length }}</span>
+      </div>
+
+      <!-- Table Wrapper -->
+      <div class="table-wrapper">
+        <table class="students-table">
+          <thead>
+            <tr>
+              <th class="col-id">ID</th>
+              <th class="col-name">Name</th>
+              <th class="col-email">Email</th>
+              <th class="col-courses">Enrolled Courses</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (student of students; track student.id) {
+            <tr class="student-row">
+              <td class="col-id">
+                <span class="id-badge">{{ student.id }}</span>
+              </td>
+              <td class="col-name">{{ student.name }}</td>
+              <td class="col-email">{{ student.email }}</td>
+              <td class="col-courses">
+                <div class="courses-list">
+                  @for (courseId of student.enrolledCourseIds; track courseId) {
+                  <span class="course-badge">{{ getCourseTitle(courseId) }}</span>
+                  }
+                  @if (student.enrolledCourseIds?.length === 0) {
+                  <span class="no-courses">No courses</span>
+                  }
+                </div>
+              </td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+    }
+    @else {
+    <div class="empty-state">
+      <div class="empty-icon">📚</div>
+      <p class="empty-title">No students found</p>
+      <p class="empty-message">There are currently no enrolled students.</p>
+    </div>
+    }
+  }
+</div>

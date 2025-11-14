@@ -1,0 +1,456 @@
+.course-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Back Button */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin-bottom: 30px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-back:hover {
+  background-color: #e8e8e8;
+  border-color: #667eea;
+  color: #667eea;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-section:hover .detail-image {
+  transform: scale(1.05);
+}
+
+.hero-badges {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.badge-sold-out {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.badge-special-offer {
+  background-color: #ffd43b;
+  color: #333;
+}
+
+.badge-on-sale {
+  background-color: #51cf66;
+  color: white;
+}
+
+/* Detail Content */
+.detail-content {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.course-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.course-date {
+  font-size: 1.1rem;
+  color: #667eea;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Description Section */
+.description-section {
+  margin-bottom: 40px;
+}
+
+.description-section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 16px 0;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.description-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.course-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 30px 0;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  border-color: #667eea;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.info-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+}
+
+.info-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.info-value.price {
+  color: #667eea;
+  font-size: 1.5rem;
+}
+
+.info-value.sold-out {
+  color: #ff6b6b;
+}
+
+/* Action Section */
+.action-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+  padding: 30px 0;
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.btn {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  background-color: #fff5f5;
+  color: #ff6b6b;
+  border: 2px solid #ffc0cb;
+}
+
+.btn-secondary:hover {
+  background-color: #ffe0e0;
+  border-color: #ff6b6b;
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.2);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-outline:hover {
+  background-color: #667eea;
+  color: white;
+}
+
+/* Additional Info Section */
+.additional-info {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.additional-info h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 24px 0;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+  font-size: 1.05rem;
+  color: #555;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+  line-height: 1.6;
+}
+
+.benefits-list li:last-child {
+  border-bottom: none;
+}
+
+/* No Details */
+.no-details {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  color: #999;
+}
+
+.no-details p {
+  font-size: 1.2rem;
+  margin: 0 0 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-detail-container {
+    padding: 20px 15px;
+  }
+
+  .detail-content {
+    padding: 24px;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .course-title {
+    font-size: 2rem;
+  }
+
+  .description-section h2,
+  .additional-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .action-section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .benefits-list li {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-detail-container {
+    padding: 15px 12px;
+  }
+
+  .detail-content {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .hero-image {
+    height: 240px;
+  }
+
+  .hero-badges {
+    top: 12px;
+    right: 12px;
+    gap: 6px;
+  }
+
+  .badge {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .course-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .course-date {
+    font-size: 0.95rem;
+  }
+
+  .header-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  .description-section h2,
+  .additional-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .info-card {
+    padding: 16px;
+  }
+
+  .info-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .info-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .info-value {
+    font-size: 1.1rem;
+  }
+
+  .info-value.price {
+    font-size: 1.2rem;
+  }
+
+  .action-section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .btn {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .additional-info {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .benefits-list li {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+}

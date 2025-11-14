@@ -1,0 +1,132 @@
+<div class="signup-container">
+  <!-- Header Section -->
+  <div class="form-header">
+    <h1 class="form-title">Enroll in a Course</h1>
+    <p class="form-subtitle">Complete the form below to join our learning community</p>
+  </div>
+
+  <!-- Form Section -->
+  <form [formGroup]="signUpForm" class="signup-form" (ngSubmit)="onSubmit()">
+    <!-- Name Field -->
+    <div class="form-group">
+      <label for="name" class="form-label">
+        <span class="label-text">Full Name</span>
+        <span class="required">*</span>
+      </label>
+      <div class="input-wrapper">
+        <span class="input-icon">👤</span>
+        <input 
+          id="name" 
+          formControlName="name" 
+          type="text"
+          class="form-input"
+          placeholder="Enter your full name"
+          required
+        >
+      </div>
+      <div class="error" *ngIf="name?.invalid && (name?.dirty || name?.touched)">
+        <small *ngIf="name?.errors?.['required']">Name is required</small>
+        <small *ngIf="name?.errors?.['minlength']">Name must contain at least three characters</small>
+      </div>
+      <small class="form-hint">Please enter your complete name</small>
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-group">
+      <label for="email" class="form-label">
+        <span class="label-text">Email Address</span>
+        <span class="required">*</span>
+      </label>
+      <div class="input-wrapper">
+        <span class="input-icon">✉️</span>
+        <input 
+          id="email" 
+          formControlName="email" 
+          type="email"
+          class="form-input"
+          placeholder="Enter your email address"
+          required
+        >
+      </div>
+      <div class="error" *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+        <small *ngIf="email?.errors?.['required']">Email is required</small>
+        <small *ngIf="email?.errors?.['email']">Email format is not valid</small>
+      </div>
+      <small class="form-hint">We'll never share your email with anyone else</small>
+    </div>
+
+    <!-- Phone Number Field -->
+    <div class="form-group">
+      <label for="phoneNumber" class="form-label">
+        <span class="label-text">Phone Number</span>
+        <span class="required">*</span>
+      </label>
+      <div class="input-wrapper">
+        <span class="input-icon">📱</span>
+        <input 
+          id="phoneNumber" 
+          formControlName="phoneNumber" 
+          type="tel"
+          class="form-input"
+          placeholder="Enter your phone number"
+          required
+        >
+      </div>
+      <div class="error" *ngIf="phoneNumber?.invalid && phoneNumber?.dirty">
+        <small *ngIf="phoneNumber?.errors?.['required']">Phone number is required</small>
+      </div>
+      <small class="form-hint">Include country code (optional)</small>
+    </div>
+
+    <!-- Course Selection Field -->
+    <div class="form-group">
+      <label for="enrolledCourseIds" class="form-label">
+        <span class="label-text">Select Course</span>
+        <span class="required">*</span>
+      </label>
+      <div class="select-wrapper">
+        <span class="select-icon">📚</span>
+        <select 
+          id="enrolledCourseIds" 
+          formControlName="enrolledCourseId"
+          class="form-select"
+          required
+        >
+          <option value="" disabled selected>Select a course to enroll</option>
+          <option *ngFor="let course of courses" [value]="course.id">
+            {{ course.title }}
+          </option>
+        </select>
+      </div>
+      <div class="error" *ngIf="(enrolledCourseId?.dirty || enrolledCourseId?.touched) && enrolledCourseId?.invalid">
+        <small *ngIf="enrolledCourseId?.errors?.['required']">Course is required</small>
+      </div>
+      <small class="form-hint">Choose the course you'd like to join</small>
+    </div>
+
+    <!-- Form Actions -->
+    <div class="form-actions">
+      <button 
+        type="submit" 
+        class="btn btn-primary"
+        [disabled]="!signUpForm.valid"
+      >
+        ✓ Complete Enrollment
+      </button>
+      <button 
+        type="reset" 
+        class="btn btn-secondary"
+      >
+        🔄 Clear Form
+      </button>
+    </div>
+    <div class="error" *ngIf="!isSucced">
+      <p>{{failureMsg}}</p>
+    </div>
+    <!-- Form Info -->
+    <div class="form-info">
+      <p>✓ All fields are required to complete enrollment</p>
+      <p style="color:#0cf446" *ngIf="isSucced">✓ {{successMsg}}</p>
+    </div>
+  </form>
+</div>
